@@ -138,6 +138,11 @@ input.error {
   border: none;
   margin: 25px 0;
   cursor: pointer;
+  color: #664de5;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 .sign-up,
