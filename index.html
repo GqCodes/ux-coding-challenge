@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UX/UI Developer Take-Home Coding Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="flexCenter">
+    <div id="card" class="card">
+      <h1>Sign In</h1>
+
+      <form action="/" method="GET" id="form">
+        <div class="fields">
+          <label for="email">Email Address</label>
+
+          <input id="emailField" name="email" type="text" />
+        </div>
+
+        <div class="fields">
+          <div class="password">
+            <label for="password">Password</label>
+            <a href="/">Forgot your password?</a>
+          </div>
+
+          <div class="password-field">
+            <input id="passwordField" name="password" type="password" />
+
+            <div id="showPassword">
+              <img id="eyeHide" class="reveal" src="assets/eye-hide-icon.svg" alt="" />
+              <img id="eyeShow" class="reveal" src="assets/eye-show-icon.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="remember">
+            <div class="box"></div>
+            <p>Remember Me</p>
+          </div>
+        </div>
+
+        <button id="btn" class="btn" type="submit">Continue</button>
+      </form>
+
+      <div class="sign-up">
+        <p>Don't have an account? <a href="/">Sign up</a></p>
+      </div>
+
+      <div id="success" class="success hide">
+        <img class="chat" src="assets/chat-icon.svg" alt="" />
+        <h1>Successfully Signed in!</h1>
+
+        <div id="closeBtn" class="close-btn flexCenter hide">
+          <img class="close-logo" src="assets/close-icon.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="js/validator.js"></script>
+  </body>
+</html>

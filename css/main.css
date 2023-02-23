@@ -1,0 +1,196 @@
+/* Main CSS file */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(203.72deg, rgba(173, 228, 245, 0.7) 17.72%, rgba(122, 115, 255, 0.7) 93.98%), #ffffff;
+  background-repeat: no-repeat;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: clamp(200px, 90%, 450px);
+  height: 518px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  background: linear-gradient(173.98deg, #ffffff 0.33%, #ffffff 23.37%, #664de5 23.53%, #664de5 94.6%);
+  background-position: center;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 54.47px;
+  color: #664de5;
+  margin-left: 30px;
+  margin-top: 34px;
+}
+
+.card .fields {
+  width: clamp(50%, 90%, 390px);
+  margin: 0 auto;
+}
+
+.card .fields label {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card .fields .password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.card .fields .password a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.reveal {
+  background-color: #ffffff;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 5px;
+}
+
+input.error {
+  box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.1)), #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 3.5C7.313 3.5 3.5 7.313 3.5 12C3.5 16.687 7.313 20.5 12 20.5C16.687 20.5 20.5 16.687 20.5 12C20.5 7.313 16.687 3.5 12 3.5ZM12 22C6.486 22 2 17.514 2 12C2 6.486 6.486 2 12 2C17.514 2 22 6.486 22 12C22 17.514 17.514 22 12 22Z' fill='%23FF0000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.9941 13.373C11.5801 13.373 11.2441 13.037 11.2441 12.623V8.20398C11.2441 7.78998 11.5801 7.45398 11.9941 7.45398C12.4081 7.45398 12.7441 7.78998 12.7441 8.20398V12.623C12.7441 13.037 12.4081 13.373 11.9941 13.373Z' fill='%23FF0000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0039 16.7959C11.4509 16.7959 10.9989 16.3489 10.9989 15.7959C10.9989 15.2429 11.4419 14.7959 11.9939 14.7959H12.0039C12.5569 14.7959 13.0039 15.2429 13.0039 15.7959C13.0039 16.3489 12.5569 16.7959 12.0039 16.7959Z' fill='%23FF0000'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  z-index: 2;
+}
+
+.remember {
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.remember p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #ffffff;
+  border-radius: 25px;
+  width: clamp(20%, 80%, 250px);
+  height: 50px;
+  border: none;
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.sign-up,
+a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  text-align: center;
+}
+
+.success {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #664de5;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.success .chat {
+  width: 194px;
+  height: 194px;
+}
+
+.success .close-btn {
+  background-color: white;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.success h1 {
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.close-success {
+  visibility: hidden;
+}
+
+.hide {
+  visibility: hidden;
+}
